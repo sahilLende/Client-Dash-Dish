@@ -11,7 +11,7 @@ import {
 import useLoading from "../hooks/useLoading";
 import Loading from "../components/Loading";
 import MenuList from "../components/MenuList";
-import ShowMenuButton from "../components/showMenuButton";
+import ShowMenuButton from "../components/ShowMenuButton";
 import RestroMenuModal from "../components/RestroMenuModal";
 import { BASE_API_URL, ENDPOINT_ORDER } from "../API";
 const getMenuByRestaurant = async (
