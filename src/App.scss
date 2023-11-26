@@ -1,0 +1,117 @@
+@use "./styles/responsive";
+@use './styles/loader';
+@use './index.scss';
+@use './styles/Cart.scss';
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+@font-face {
+  font-family: Sunset-Serial;
+  src: url("./fonts/sunset-serial-bold.ttf");
+}
+
+body,
+html {
+  font-family: "DM Sans", sans-serif;
+}
+
+.title-font {
+  font-family: Sunset-Serial, sans-serif;
+}
+
+#shaw {
+  background-image: linear-gradient(to bottom, black, black, transparent);
+  background-size: cover; 
+  background-position: center; 
+}
+
+.select-custom {
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+}
+
+.animation-ctn {
+  text-align: center;
+  margin-top: 5em;
+}
+
+@keyframes checkmark {
+  0% {
+    stroke-dashoffset: 100px;
+  }
+
+  100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes checkmark-circle {
+  0% {
+    stroke-dashoffset: 480px;
+  }
+
+  100% {
+    stroke-dashoffset: 960px;
+  }
+}
+
+@keyframes colored-circle {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+}
+
+.inlinesvg .svg svg {
+  display: inline;
+}
+
+.icon--order-success svg polyline {
+  animation: checkmark 0.25s ease-in-out 0.7s backwards;
+}
+
+.icon--order-success svg circle {
+  animation: checkmark-circle 0.6s ease-in-out backwards;
+}
+.icon--order-success svg circle#colored {
+  animation: colored-circle 0.6s ease-in-out 0.7s backwards;
+}
+
+@keyframes wrongmark {
+  0% {
+    stroke-dashoffset: 40;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+.wrongmark-circle {
+  stroke: #D06079;
+  stroke-width: 2;
+  fill: none;
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  animation: wrongmark 1s ease-in-out forwards;
+}
+
+.wrongmark-path {
+  fill: none;
+  stroke: #D06079;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: wrongmark 0.5s ease-in-out forwards;
+}
+

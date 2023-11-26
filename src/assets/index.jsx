@@ -1,0 +1,14 @@
+export { default as homepage } from "./homepage.png"
+export { default as order } from "./order.jpg";
+export { default as quality } from "./quality.jpg";
+export { default as delivery } from "./delivery.jpg";
+export { default as worker } from "./worker.png";
+export { default as shawarma } from "./shawarma.jpg";
+export { default as shaw } from "./shaw-1.png";
+export { default as fanta } from "./fanta.png";
+export { default as chic } from "./ChicandChips.png"
+export { default as jrice } from "./JollofRice.png"
+export { default as snack } from "./PouYam.png"
+export { default as checkout } from "./checkout.png"
+export { default as login } from "./login.jpg"
+export { default as basket } from "./basket.png"
