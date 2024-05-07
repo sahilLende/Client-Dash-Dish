@@ -8,10 +8,6 @@ import ActiveFilters from "../components/ActiveFilters";
 import useLoading from "../hooks/useLoading";
 import { BASE_API_URL, ENDPOINT_ORDER } from "../API";
 
-console.log(
-  "🚀 ~ file: OrderLocation.jsx:11 ~ import.meta.env.BASE_URL:",
-  import.meta.env.BASE_URL
-);
 const fetchRestaurantsByCity = async (location, offset, urlParams) => {
   let extraqueries = {};
   for (const key of urlParams.keys()) {

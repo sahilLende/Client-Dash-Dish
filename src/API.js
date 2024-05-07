@@ -1,4 +1,4 @@
-const BASE_API_URL = "https://api-dash.up.railway.app";
+const BASE_API_URL = "https://api-dash-dish.onrender.com";
 
 const ENDPOINT_REGISTER = "/user/register";
 const ENDPOINT_LOGIN = "/user/login";
